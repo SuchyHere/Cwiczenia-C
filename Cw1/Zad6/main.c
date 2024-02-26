@@ -40,30 +40,30 @@ int main() {
         scanf("%s", command);
         //sprawdzanie czy ktora opcje wybral uzytkownik
         if (strcmp(command, "play") == 0) {
-            int playerMove, computerMove, result;
+            int player, computer, result;
 
             printf("Wybierz ruch [0: kamien, 1: papier, 2: nozyce]: ");
-            scanf("%d", &playerMove);
+            scanf("%d", &player);
 
-            computerMove = rand() % 3;
+            computer = rand() % 3;
 
             //sprawdzanie wyniku
-            if (playerMove == computerMove) {
+            if (player == computer) {
                 result = 0;
-            } else if ((playerMove == 0 && computerMove == 2) ||
-                       (playerMove == 1 && computerMove == 0) ||
-                       (playerMove == 2 && computerMove == 1)) {
+            } else if ((player == 0 && computer == 2) ||
+                       (player == 1 && computer == 0) ||
+                       (player == 2 && computer == 1)) {
                 result = 1;
             } else {
                 result = 2;
             }
             //zapisywanie wynikow do struktury wyzej
-            rounds[roundCount].playerMove = playerMove;
-            rounds[roundCount].computerMove = computerMove;
+            rounds[roundCount].playerMove = player;
+            rounds[roundCount].computerMove = computer;
             rounds[roundCount].result = result;
             roundCount++;
 
-            printf("twoj ruch: %s, ruch komputera: %s, ", moves[playerMove], moves[computerMove]);
+            printf("twoj ruch: %s, ruch komputera: %s, ", moves[player], moves[computer]);
             if (result == 0) {
                 printf("remis\n");
             } else if (result == 1) {
