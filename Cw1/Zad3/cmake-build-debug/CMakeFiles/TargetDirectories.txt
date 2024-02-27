@@ -1,3 +1,0 @@
-/Users/suchy/Documents/GitHub/Cwiczenia-C-C--/Cw1/Zad3/cmake-build-debug/CMakeFiles/Zad3.dir
-/Users/suchy/Documents/GitHub/Cwiczenia-C-C--/Cw1/Zad3/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/suchy/Documents/GitHub/Cwiczenia-C-C--/Cw1/Zad3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
